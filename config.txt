@@ -1,0 +1,4 @@
+IsDiscord=False
+digit=3
+diff=2
+token=''
