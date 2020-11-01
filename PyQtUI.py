@@ -19,18 +19,14 @@ class Button(QToolButton):
 class PyQtUI(QWidget):
     def __init__(self, digit, diff):
         super().__init__(None)
-        
-        #message
         self.message = QLabel()
         self.message.setText('-> 을 눌러 게임을 시작하세요')        
 
-        #display
         self.display = QLineEdit()
         self.display.setReadOnly(True)
         self.display.setAlignment(Qt.AlignRight)
         self.display.setMaxLength(50)
-        
-        #button
+
         buttonLayout = QGridLayout()
         buttonGrid = [
             '1', '2', '3', 
@@ -47,12 +43,10 @@ class PyQtUI(QWidget):
             button = Button(btnText, self.buttonClicked)
             buttonLayout.addWidget(button, rc // col, rc % col)
             rc += 1
-        
-        #log
+
         self.log = QTextEdit()
         self.log.setDisabled(True)
-        
-        #mainLayout
+
         mainLayout = QGridLayout()
         mainLayout.setSizeConstraint(QLayout.SetFixedSize)
         mainLayout.addWidget(self.message, 0, 0, 1, 2)

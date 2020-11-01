@@ -1,5 +1,8 @@
 # [toy project] AINumBall
 
+## Version
+Python 3.6.8
+
 ## Description
 It is numerical baseball game which player and computer compete each other, not player only guess the number of computer. You can determine the digit, difficulty, and UI according to your settings.
 

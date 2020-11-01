@@ -21,7 +21,6 @@ if __name__ == '__main__':
     
     if IsDiscord == True:
         from DiscordUI import *
-        DiscordUI(digit, diff, token)
     else:
         from PyQt5.QtCore import Qt
         from PyQt5.QtWidgets import *

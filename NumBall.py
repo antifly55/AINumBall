@@ -51,7 +51,6 @@ class Computer(NumBall):
             self.computerNum += str(D[ran])
             del D[ran]
 
-        #인공지능을 구현하기 위한 배열을 만듭니다 
         self.tracking = str()
         self.comCase = list()
         self.DFS(0)
